@@ -1,0 +1,32 @@
+@import "_variables"
+.header
+  background-color: lighten($main-color,8 )
+  &-img
+    margin-right: 155px
+  &__blocks
+    display: flex
+    flex-direction: row
+    padding-top: 20px
+    padding-bottom: 20px
+    align-items: center
+  &-contacts
+    display: flex
+    flex-direction: row
+    align-items: center
+    &__phone
+      padding-right: 10px
+      border-right: 2px solid $text-color-light
+      margin-right: 10px
+      font-size: 22px
+      font-weight: 500
+      &:last-child
+        border: none
+  &-button
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &:hover
+      background-color: darken($main-color,4 )
+      color: lighten($text-color-light,100 )
+    img
+      margin-right: 7px

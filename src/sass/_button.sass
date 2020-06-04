@@ -1,5 +1,5 @@
 .button
-  background-color: $main-color
+  background-color: $button-color
   border-radius: 4px
   color: $text-color-light
   font-size: 15px
@@ -8,3 +8,8 @@
   border: none
   outline: none
   cursor: pointer
+  &:hover
+    background-color: darken($main-color,4 )
+    color: lighten($text-color-light,100 )
+.big-button
+  padding: 20px 18px 20px 18px

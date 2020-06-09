@@ -1,14 +1,16 @@
 @import "_reset.sass"
-@import "_variables"
-@import "_button"
+@import "_variables.sass"
+@import "_button.sass"
+*
+  box-sizing: border-box
 body
   font-family: Roboto
   font-weight: 500
   color: $text-color-light
-  box-sizing: border-box
   background-color: $main-color
 .container
   max-width: 946px
   margin: 0 auto
-@import "header"
+@import "_header.sass"
 @import "_main.sass"
+@import "_features.sass"

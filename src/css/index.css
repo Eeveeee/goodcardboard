@@ -64,11 +64,14 @@ img {
   padding: 20px 18px 20px 18px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto;
   font-weight: 500;
   color: #d6d6d6;
-  box-sizing: border-box;
   background-color: #333;
 }
 
@@ -220,5 +223,52 @@ body {
 .card-small {
   font-size: 13px;
   font-weight: 300;
+}
+
+.features-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.features__col {
+  flex-basis: 32%;
+}
+
+.features__header {
+  min-height: 80px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.features-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  padding-right: 19px;
+  padding-left: 13px;
+  background-color: #fff;
+}
+
+.features-card__info {
+  max-height: 76px;
+  color: #373737;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.features-card h3 {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.features-card img {
+  margin-right: 12px;
+  max-width: 56px;
+  max-height: 56px;
 }
 /*# sourceMappingURL=index.css.map */

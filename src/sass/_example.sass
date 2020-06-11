@@ -1,0 +1,31 @@
+@import "_variables.sass"
+.example
+  &__header
+    color: $text-color-light
+    text-align: center
+    text-transform: uppercase
+  &__img-wrap
+    text-align: center
+  &-wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-bottom: 65px 
+  &-card
+    display: flex
+    flex-direction: column
+    flex-basis: 49%
+    margin-top: 35px
+    align-items: center
+    background: rgba(255,255 ,255 ,0.1 )
+    border-radius: 5px
+    padding: 10px
+    font-size: 20px
+    &__img
+      min-height: 300px
+      max-width: 421px
+      img
+        overflow: hidden
+    &__buttons
+      margin-top: 30px

@@ -9,7 +9,15 @@
   outline: none
   cursor: pointer
   &:hover
-    background-color: darken($main-color,4 )
-    color: lighten($text-color-light,100 )
+    background-color: darken($button-color,5 )
+    color: $text-color-light
 .big-button
   padding: 20px 18px 20px 18px
+.button-more
+  padding: 11px 20px
+  background: none
+  color: $text-color
+  border: 2px solid $button-color
+  &:hover
+    background: darken($button-color,3)
+    

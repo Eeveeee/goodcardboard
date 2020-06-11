@@ -7,12 +7,11 @@
     <title>Добрый картон</title>
   </head>
   <body>
-    <!-- FIXME:  -->
-    <header class="header">
+    <div class="header">
       <div class="container">
         <div class="header__blocks">
           <div class="header-img">
-            <img src="/src/img/header__logo.png" alt="Добрый картон" />
+            <img src="/src/img/header/header__logo.png" alt="Добрый картон" />
           </div>
           <div class="header-contacts">
             <div class="header-contacts__phone">8 (347) 271-54-28</div>
@@ -20,7 +19,7 @@
           </div>
           <!-- /.header-contacts  -->
           <button class="button header-button">
-            <img src="/src/img/call_icon.png" alt="звонок" />
+            <img src="/src/img/header/call_icon.png" alt="звонок" />
             Заказать звонок
           </button>
           <!-- /.header-button  -->
@@ -28,18 +27,16 @@
         <!-- /.header__blocks  -->
       </div>
       <!-- /.container  -->
-      <!-- FIXME:  -->
-    </header>
+    </div>
     <!-- /.header  -->
     <section class="main">
       <div class="container">
         <div class="main__blocks">
           <div class="main-cardboards">
-            <img src="/src/img/main-cardboards.png" alt="" />
+            <img src="/src/img/main/main-cardboards.png" alt="" />
           </div>
           <div class="main-info">
-            <!-- FIXME:  -->
-            <header class="main-info__title">
+            <div class="main-info__title">
               <span>
                 Производство упаковки из
                 <br />
@@ -47,8 +44,7 @@
               </span>
               <br />
               с доставкой по всей России
-              <!-- FIXME:  -->
-            </header>
+            </div>
             <div class="info-card">
               <div class="info-card-title">
                 Получите индивидуальное предложение
@@ -87,9 +83,9 @@
               На рынке изделий из гофрокартона
             </div>
             <div class="features-card">
-              <div>
+              <div class="features-card__icon">
                 <img
-                  src="/src/img/factory-icon.png"
+                  src="/src/img/main/factory-icon.png"
                   alt=""
                   class="features__img"
                 />
@@ -103,9 +99,9 @@
               </div>
             </div>
             <div class="features-card">
-              <div>
+              <div class="features-card__icon">
                 <img
-                  src="/src/img/2boxes-icon.png"
+                  src="/src/img/main/2boxes-icon.png"
                   alt=""
                   class="features__img"
                 />
@@ -120,15 +116,19 @@
             </div>
           </div>
           <!-- /.features__col -->
+
           <div class="features__col">
             <div class="features__header">
-              <h2>до 5 000 000 м2</h2>
+              <h2>
+                до 5 000 000 м
+                <sup>2</sup>
+              </h2>
               Ежемесячный объем производства гофрокартона
             </div>
             <div class="features-card">
-              <div>
+              <div class="features-card__icon">
                 <img
-                  src="/src/img/4boxes-icon.png"
+                  src="/src/img/main/4boxes-icon.png"
                   alt=""
                   class="features__img"
                 />
@@ -142,9 +142,9 @@
               </div>
             </div>
             <div class="features-card">
-              <div>
+              <div class="features-card__icon">
                 <img
-                  src="/src/img/1box-icon.png"
+                  src="/src/img/main/1box-icon.png"
                   alt=""
                   class="features__img"
                 />
@@ -161,11 +161,20 @@
 
           <div class="features__col">
             <div class="features__header">
-              <h2>4 000 м2</h2>
+              <h2>
+                4 000 м
+                <sup>2</sup>
+              </h2>
               Площадь склада
             </div>
             <div class="features-card">
-              <img src="/src/img/medal-icon.png" alt="" class="features__img" />
+              <div class="features-card__icon">
+                <img
+                  src="/src/img/main/medal-icon.png"
+                  alt=""
+                  class="features__img"
+                />
+              </div>
               <div class="features-card__info">
                 <h3>Стабильное качество</h3>
                 <div>
@@ -175,9 +184,9 @@
               </div>
             </div>
             <div class="features-card">
-              <div>
+              <div class="features-card__icon">
                 <img
-                  src="/src/img/box-clock-icon.png"
+                  src="/src/img/main/box-clock-icon.png"
                   alt=""
                   class="features__img"
                 />
@@ -197,3 +206,76 @@
     </div>
   </body>
 </html>
+
+<section class="example">
+  <div class="container">
+    <h2 class="example__header">НАША ПРОДУКЦИЯ</h2>
+    <div class="example__img-wrap">
+      <img src="/src/img/example/wave.png" alt="" />
+    </div>
+    <!-- /.example__img-wrap  -->
+
+    <div class="example-wrap">
+      <div class="example-card">
+        <div class="example-card__img">
+          <img src="/src/img/example/box.png" alt="" />
+        </div>
+
+        <div class="example-card__title">Гофрокороб 4-х клапанный</div>
+
+        <div class="example-card__buttons">
+          <button class="button button-more">Подробнее</button>
+          <button class="button">Получить расчет</button>
+        </div>
+      </div>
+      <!-- /.example-card -->
+
+      <div class="example-card">
+        <div class="example-card__img">
+          <img src="/src/img/example/lotok.png" alt="" />
+        </div>
+
+        <div class="example-card__title">Гофролоток</div>
+
+        <div class="example-card__buttons">
+          <button class="button button-more">Подробнее</button>
+          <button class="button">Получить расчет</button>
+        </div>
+      </div>
+      <!-- /.example-card -->
+
+      <div class="example-card">
+        <div class="example-card__img">
+          <img src="/src/img/example/lotok-closing.png" alt="" />
+        </div>
+
+        <div class="example-card__title">
+          Гофрокороб самосборный (сложная высечка)
+        </div>
+
+        <div class="example-card__buttons">
+          <button class="button button-more">Подробнее</button>
+          <button class="button">Получить расчет</button>
+        </div>
+      </div>
+      <!-- /.example-card -->
+
+      <div class="example-card">
+        <div class="example-card__img">
+          <img src="/src/img/example/kartonki.png" alt="" />
+        </div>
+
+        <div class="example-card__title">Листовой гофрокартон</div>
+
+        <div class="example-card__buttons">
+          <button class="button button-more">Подробнее</button>
+          <button class="button">Получить расчет</button>
+        </div>
+      </div>
+      <!-- /.example-card -->
+    </div>
+    <!-- /.example-wrap -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.example -->

@@ -3,7 +3,7 @@
  License: none (public domain)
  Changed from CSS to SASS
  */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -44,7 +44,7 @@ img {
 }
 
 .button {
-  background-color: #3b3b3b;
+  background-color: #303030;
   border-radius: 4px;
   color: #d6d6d6;
   font-size: 15px;
@@ -56,12 +56,23 @@ img {
 }
 
 .button:hover {
-  background-color: #292929;
-  color: white;
+  background-color: #232323;
+  color: #d6d6d6;
 }
 
 .big-button {
   padding: 20px 18px 20px 18px;
+}
+
+.button-more {
+  padding: 11px 20px;
+  background: none;
+  color: #373737;
+  border: 2px solid #303030;
+}
+
+.button-more:hover {
+  background: #282828;
 }
 
 * {
@@ -125,7 +136,7 @@ body {
 }
 
 .button {
-  background-color: #3b3b3b;
+  background-color: #303030;
   border-radius: 4px;
   color: #d6d6d6;
   font-size: 15px;
@@ -137,17 +148,28 @@ body {
 }
 
 .button:hover {
-  background-color: #292929;
-  color: white;
+  background-color: #232323;
+  color: #d6d6d6;
 }
 
 .big-button {
   padding: 20px 18px 20px 18px;
 }
 
+.button-more {
+  padding: 11px 20px;
+  background: none;
+  color: #373737;
+  border: 2px solid #303030;
+}
+
+.button-more:hover {
+  background: #282828;
+}
+
 .main {
   position: relative;
-  background: url(../img/main-background.jpg) center no-repeat;
+  background: url(../img/main/main-background.jpg) center no-repeat;
   background-size: cover;
   z-index: 1;
 }
@@ -233,31 +255,61 @@ body {
 }
 
 .features__col {
-  flex-basis: 32%;
+  flex-basis: 31%;
+  margin-right: 30px;
+}
+
+.features__col:last-child {
+  margin-right: 0px;
 }
 
 .features__header {
+  box-sizing: content-box;
+  padding: 5px;
   min-height: 80px;
   margin-bottom: 25px;
   text-align: center;
+  background: #282828;
+  color: #d6d6d6;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.features__header h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #e3e3e3;
+}
+
+.features__header h2 sup {
+  font-size: 23px;
 }
 
 .features-card {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  margin-right: 30px;
-  padding-right: 19px;
-  padding-left: 13px;
-  background-color: #fff;
+  padding: 28px 10px 28px 8px;
+  border-radius: 5px;
+  background-color: #b9b9b9;
+}
+
+.features-card__icon {
+  margin-right: 5px;
+  max-width: 56px;
+  max-height: 56px;
 }
 
 .features-card__info {
-  max-height: 76px;
   color: #373737;
   font-size: 14px;
   font-weight: 300;
   line-height: 19px;
+}
+
+.features-card__info div {
+  max-width: 210px;
 }
 
 .features-card h3 {
@@ -266,9 +318,46 @@ body {
   font-weight: 700;
 }
 
-.features-card img {
-  margin-right: 12px;
-  max-width: 56px;
-  max-height: 56px;
+.example__header {
+  color: #d6d6d6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__img-wrap {
+  text-align: center;
+}
+
+.example-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 65px;
+}
+
+.example-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 49%;
+  margin-top: 35px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.example-card__img {
+  min-height: 300px;
+  max-width: 421px;
+}
+
+.example-card__img img {
+  overflow: hidden;
+}
+
+.example-card__buttons {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=index.css.map */

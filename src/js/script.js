@@ -25,4 +25,9 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".feedback-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 800,
+  });
 });

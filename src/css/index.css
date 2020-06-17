@@ -3,86 +3,7 @@
  License: none (public domain)
  Changed from CSS to SASS
  */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,17 +13,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -110,20 +21,15 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
@@ -608,23 +514,23 @@ body {
   padding-right: 3px;
 }
 
-.slick-slide {
+.slider .slick-slide {
   opacity: 0.4;
 }
 
-.slick-slider {
+.slider .slick-slider {
   display: flex;
 }
 
-.slick-list {
+.slider .slick-list {
   overflow: hidden;
 }
 
-.slick-track {
+.slider .slick-track {
   display: flex;
 }
 
-.slick-current {
+.slider .slick-current {
   opacity: 1;
 }
 
@@ -708,4 +614,75 @@ body {
   opacity: 1;
 }
 
+.feedback {
+  padding-bottom: 50px;
+}
+
+.feedback-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.feedback__blocks {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.feedback-slider {
+  display: flex;
+  text-align: center;
+  min-width: 0;
+}
+
+.feedback-slider .slick-arrow {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 30px 10px;
+  border: none;
+  outline: none;
+  font-size: 0;
+  top: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.feedback-slider .slick-arrow.slick-prev {
+  text-align: center;
+  background: #232323 url("../img/slider/Left-Arrow-Orig.svg") 50% 50%/70% no-repeat;
+  left: 0;
+}
+
+.feedback-slider .slick-arrow.slick-next {
+  text-align: center;
+  background: #232323 url("../img/slider/Right-Arrow-Orig.svg") 50% 50%/70% no-repeat;
+  right: 0;
+}
+
+.feedback-slider__item {
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  max-width: 260px;
+  min-height: 360px;
+  background: #ffffff;
+  cursor: move;
+}
+
+.feedback-slider__item a {
+  cursor: move;
+}
+
+.feedback-slider .slick-slider {
+  display: flex;
+}
+
+.feedback-slider .slick-list {
+  overflow: hidden;
+}
+
+.feedback-slider .slick-track {
+  display: flex;
+}
 /*# sourceMappingURL=index.css.map */

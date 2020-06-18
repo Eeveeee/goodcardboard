@@ -235,8 +235,9 @@ body {
 }
 
 .info-card-form input {
+  font-size: 13px;
   background-color: #e7e7e7;
-  padding: 21px 114px 21px 19px;
+  padding: 21px 120px 21px 19px;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -595,7 +596,7 @@ body {
 
 .clients-img-wrap {
   opacity: 0.2;
-  margin-top: 5px;
+  margin-top: 30px;
   border: 2px solid #d6d6d6;
   border-radius: 5px;
   display: flex;
@@ -618,6 +619,13 @@ body {
   padding-bottom: 50px;
 }
 
+.feedback .container {
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .feedback-header {
   text-align: center;
   text-transform: uppercase;
@@ -627,7 +635,6 @@ body {
 
 .feedback__blocks {
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
@@ -684,5 +691,69 @@ body {
 
 .feedback-slider .slick-track {
   display: flex;
+}
+
+.map {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 16%;
+  left: 30%;
+}
+
+.card__blocks {
+  padding: 30px;
+  border-radius: 5px;
+  color: #373737;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.card__blocks .button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.card__block {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__block h3 {
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.card__block span {
+  line-height: 17px;
+}
+
+.card__block:last-child {
+  margin-bottom: 0px;
+}
+
+.card-header-wrap h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-header-wrap img {
+  left: 5px;
+  position: absolute;
+  max-width: 20px;
+  max-height: 25px;
+}
+
+.footer {
+  background: #1a1a1a;
+  font-size: 14px;
+  padding: 15px 0;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

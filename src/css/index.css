@@ -237,7 +237,7 @@ body {
 .info-card-form input {
   font-size: 12px;
   background-color: #e7e7e7;
-  padding: 1.34rem 120px 1.34rem 19px;
+  padding: 21px 120px 21px 19px;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -503,16 +503,18 @@ body {
 
 .slider {
   width: 55%;
-  min-width: 0;
   position: relative;
 }
 
+.slider-big__item {
+  min-width: 1000px;
+}
+
 .slider-small__item {
+  min-width: 10px;
   transition: all 0.3s ease 0s;
   margin-top: 10px;
   cursor: move;
-  padding-left: 3px;
-  padding-right: 3px;
 }
 
 .slider .slick-slide {
@@ -529,6 +531,7 @@ body {
 
 .slider .slick-track {
   display: flex;
+  min-width: 0;
 }
 
 .slider .slick-current {
@@ -595,6 +598,7 @@ body {
 }
 
 .clients-img-wrap {
+  transition: .4s;
   opacity: 0.2;
   margin-top: 30px;
   border: 2px solid #d6d6d6;
@@ -658,17 +662,18 @@ body {
 
 .feedback-slider .slick-arrow.slick-prev {
   text-align: center;
-  background: #232323 url("../img/slider/left-arrow-orig.svg") 50% 50%/70% no-repeat;
+  background: #232323 url("../img/slider/Left-Arrow-Orig.svg") 50% 50%/70% no-repeat;
   left: 0;
 }
 
 .feedback-slider .slick-arrow.slick-next {
   text-align: center;
-  background: #232323 url("../img/slider/right-arrow-orig.svg") 50% 50%/70% no-repeat;
+  background: #232323 url("../img/slider/Right-Arrow-Orig.svg") 50% 50%/70% no-repeat;
   right: 0;
 }
 
 .feedback-slider__item {
+  min-width: 100px;
   border-radius: 5px;
   transition: all 0.3s ease 0s;
   max-width: 260px;

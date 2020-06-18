@@ -30,15 +30,16 @@
     line-height: 24px
 .slider
   width: 55%
-  min-width: 0;
   position: relative
+  &-big
+    &__item
+      min-width: 1000px
   &-small
     &__item
+      min-width: 10px
       transition: all 0.3s ease 0s
       margin-top: 10px
       cursor: move
-      padding-left: 3px
-      padding-right: 3px
 .slider .slick
   &-slide
     opacity: 0.4
@@ -48,6 +49,7 @@
     overflow: hidden
   &-track
     display: flex
+    min-width: 0
   &-current
     opacity: 1
 .slider

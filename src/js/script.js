@@ -1,4 +1,4 @@
-$(function () {
+$(window).load(function () {
   $(".slider-big").slick({
     arrows: false,
     draggable: false,

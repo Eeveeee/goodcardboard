@@ -555,12 +555,12 @@ body {
 
 .slider .slick-arrow.slick-next {
   text-align: center;
-  background: #232323 url("../img/slider/Right-Arrow-orig.svg") 50% 50%/70% no-repeat;
+  background: #232323 url("../img/slider/Right-arrow-orig.svg") 50% 50%/70% no-repeat;
   right: 0;
 }
 
 .slider .slick-arrow.slick-next:hover {
-  background: #3d3d3d url("../img/slider/Right-Arrow-orig.svg") 50% 50%/70% no-repeat;
+  background: #3d3d3d url("../img/slider/Right-arrow-orig.svg") 50% 50%/70% no-repeat;
 }
 
 .slider .slick-arrow.slick-prev:hover {

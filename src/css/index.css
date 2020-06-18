@@ -235,7 +235,7 @@ body {
 }
 
 .info-card-form input {
-  font-size: 13px;
+  font-size: 12px;
   background-color: #e7e7e7;
   padding: 21px 120px 21px 19px;
   border-radius: 3px;
@@ -549,22 +549,22 @@ body {
 
 .slider .slick-arrow.slick-prev {
   text-align: center;
-  background: #232323 url("../img/slider/Left-Arrow-Orig.svg") 50% 50%/70% no-repeat;
+  background: #232323 url("../img/slider/left-arrow-orig.svg") 50% 50%/70% no-repeat;
   left: 0;
 }
 
 .slider .slick-arrow.slick-next {
   text-align: center;
-  background: #232323 url("../img/slider/Right-Arrow-Orig.svg") 50% 50%/70% no-repeat;
+  background: #232323 url("../img/slider/right-arrow-orig.svg") 50% 50%/70% no-repeat;
   right: 0;
 }
 
 .slider .slick-arrow.slick-next:hover {
-  background: #3d3d3d url("../img/slider/Right-Arrow-Orig.svg") 50% 50%/70% no-repeat;
+  background: #3d3d3d url("../img/slider/right-arrow-orig.svg") 50% 50%/70% no-repeat;
 }
 
 .slider .slick-arrow.slick-prev:hover {
-  background: #3d3d3d url("../img/slider/Left-Arrow-Orig.svg") 50% 50%/70% no-repeat;
+  background: #3d3d3d url("../img/slider/left-arrow-orig.svg") 50% 50%/70% no-repeat;
 }
 
 .slider .slick-arrow.slick-prev.slick-disabled {

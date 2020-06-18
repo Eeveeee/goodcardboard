@@ -658,7 +658,7 @@ body {
 
 .feedback-slider .slick-arrow.slick-prev {
   text-align: center;
-  background: #232323 url("../img/slider/reft-arrow-orig.svg") 50% 50%/70% no-repeat;
+  background: #232323 url("../img/slider/left-arrow-orig.svg") 50% 50%/70% no-repeat;
   left: 0;
 }
 

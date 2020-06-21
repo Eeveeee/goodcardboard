@@ -23,5 +23,13 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 800,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });

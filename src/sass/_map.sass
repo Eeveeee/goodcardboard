@@ -1,5 +1,8 @@
 .map
   position: relative
+  &-content
+    height: 500px
+    position: relative
 .card
   position: absolute
   top: 16%
@@ -29,11 +32,34 @@
       font-size: 17px
       font-weight: 700
       margin-bottom: 5px
-      display: flex
-      flex-direction: row
     img
       left: 5px
       position: absolute
       max-width: 20px
       max-height: 25px
-
+@media screen and ( max-width: 768px )
+  .map
+    display: flex
+    flex-direction: column
+    &-content
+      top: 0
+      left: 0
+      height: 300px
+  .card
+    position: relative
+    top: auto
+    left: auto
+    &__blocks
+      background: white
+      text-align: center
+      border-radius: 0
+      padding: 5px
+      .button
+        padding: 10px 15px
+        margin: 10px 0
+    &__block
+      margin-bottom: 5px
+      justify-content: center
+    &-header-wrap
+      img
+        display: none

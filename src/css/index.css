@@ -206,7 +206,7 @@ body {
   font-size: 27px;
   font-weight: 400;
   line-height: 42px;
-  width: 524px;
+  max-width: 524px;
 }
 
 .main-info__title span {
@@ -233,16 +233,24 @@ body {
 }
 
 .info-card-form {
+  display: flex;
+  align-items: center;
   margin-bottom: 12px;
 }
 
 .info-card-form input {
+  margin-right: 10px;
   font-size: 12px;
   background-color: #e7e7e7;
-  padding: 21px 130px 21px 19px;
+  padding: 21px 125px 21px 19px;
   border-radius: 3px;
   border: none;
   outline: none;
+}
+
+.info-card-form .big-button {
+  width: 200px;
+  padding: 20px 0;
 }
 
 .card-small {
@@ -293,6 +301,7 @@ body {
     display: inline !important;
   }
   .info-card-form {
+    flex-direction: column;
     margin-bottom: 8px;
   }
   .info-card-form input {
@@ -303,6 +312,7 @@ body {
     font-size: 12px;
   }
   .info-card-form .big-button {
+    width: auto;
     padding: 8px 15px;
     font-size: 12px;
   }
@@ -828,7 +838,6 @@ body {
 
 .feedback__blocks {
   padding: 10px;
-  border-radius: 5px;
 }
 
 .feedback-slider {
@@ -887,7 +896,21 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .feedback .container {
+    border-radius: 0px;
+  }
+  .feedback-header {
+    margin-bottom: 10px;
+  }
+}
+
 .map {
+  position: relative;
+}
+
+.map-content {
+  height: 500px;
   position: relative;
 }
 
@@ -933,8 +956,6 @@ body {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 5px;
-  display: flex;
-  flex-direction: row;
 }
 
 .card-header-wrap img {
@@ -944,16 +965,44 @@ body {
   max-height: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .map {
+    display: flex;
+    flex-direction: column;
+  }
+  .map-content {
+    top: 0;
+    left: 0;
+    height: 300px;
+  }
+  .card {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .card__blocks {
+    background: white;
+    text-align: center;
+    border-radius: 0;
+    padding: 5px;
+  }
+  .card__blocks .button {
+    padding: 10px 15px;
+    margin: 10px 0;
+  }
+  .card__block {
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .card-header-wrap img {
+    display: none;
+  }
+}
+
 .footer {
   background: #1a1a1a;
   font-size: 14px;
   padding: 15px 0;
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
 }
 /*# sourceMappingURL=index.css.map */

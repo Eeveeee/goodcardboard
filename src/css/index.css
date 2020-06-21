@@ -553,6 +553,7 @@ body {
 }
 
 .secondary-form input {
+  text-align: center;
   display: block;
   margin-bottom: 12px;
   padding: 21px 120px;
@@ -569,6 +570,30 @@ body {
   display: block;
   font-size: 14px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .secondary-header {
+    line-height: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .secondary-header h2 {
+    font-size: 18px;
+    font-size: 500;
+  }
+  .secondary-wrap {
+    padding: 10px 5px;
+  }
+  .secondary-form input {
+    padding: 8px 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .secondary-form .big-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
 }
 
 .showcase-wrap {

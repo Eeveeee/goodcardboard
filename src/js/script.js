@@ -12,13 +12,7 @@ $(document).ready(function () {
     asNavFor: ".slider-big",
     responsive: [
       {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },

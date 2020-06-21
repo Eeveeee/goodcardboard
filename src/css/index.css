@@ -790,6 +790,24 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .clients-header {
+    margin: 0;
+  }
+  .clients-wrap {
+    padding: 10px 5px;
+    flex-wrap: wrap;
+  }
+  .clients-col {
+    flex-basis: 23%;
+  }
+  .clients-img-wrap {
+    max-height: 100px;
+    width: auto;
+    margin-top: 10px;
+  }
+}
+
 .feedback {
   padding-bottom: 50px;
 }

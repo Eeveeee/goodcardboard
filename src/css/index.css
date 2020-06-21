@@ -61,7 +61,7 @@ img {
 }
 
 .big-button {
-  padding: 20px 18px 20px 18px;
+  padding: 19px 18px 19px 18px;
 }
 
 .button-more {
@@ -227,7 +227,7 @@ body {
   line-height: 30px;
 }
 
-.info-card-title span {
+.info-card-title span:last-child {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -239,7 +239,7 @@ body {
 .info-card-form input {
   font-size: 12px;
   background-color: #e7e7e7;
-  padding: 21px 120px 21px 19px;
+  padding: 21px 130px 21px 19px;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -248,6 +248,66 @@ body {
 .card-small {
   font-size: 13px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .main__blocks {
+    padding: 10px 5px;
+  }
+  .main-cardboards {
+    display: none;
+  }
+  .main-info {
+    text-align: center;
+  }
+  .main-info__title {
+    max-width: 100%;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: normal;
+  }
+  .main-info__title span {
+    font-size: 18px;
+  }
+  .info-card {
+    padding: 6px;
+    text-align: center;
+  }
+  .info-card-title {
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .info-card-title span {
+    display: none;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .info-card-title span:first-child {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 15px;
+    display: inline !important;
+  }
+  .info-card-form {
+    margin-bottom: 8px;
+  }
+  .info-card-form input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px 30px 10px 30px;
+  }
+  .info-card-form .big-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  .info-card small {
+    font-size: 10px;
+  }
 }
 
 .features-wrap {

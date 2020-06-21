@@ -463,6 +463,43 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .example-wrap {
+    padding: 10px 10px;
+  }
+  .example-card {
+    padding: 0;
+    padding-top: 5px;
+    margin-top: 7px;
+  }
+  .example-card__title {
+    text-align: center;
+    min-height: 30px;
+    font-size: 15px;
+  }
+  .example-card__title span {
+    display: none;
+  }
+  .example-card__img {
+    min-height: 109px;
+  }
+  .example-card__buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .example-card__buttons .button {
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+  }
+  .example-card__buttons .button-more {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
 .secondary {
   position: relative;
   background: url(../img/secondary/background.jpg) center no-repeat;

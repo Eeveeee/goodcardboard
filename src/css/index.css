@@ -303,7 +303,7 @@ body {
     font-size: 12px;
   }
   .info-card-form input::placeholder {
-    text-align: center;
+    margin: 0 auto;
   }
   .info-card-form .big-button {
     padding: 8px 15px;

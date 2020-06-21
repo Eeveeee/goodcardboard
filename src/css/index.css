@@ -302,9 +302,6 @@ body {
     padding: 10px 30px 10px 30px;
     font-size: 12px;
   }
-  .info-card-form input::placeholder {
-    margin: 0 auto;
-  }
   .info-card-form .big-button {
     padding: 8px 15px;
     font-size: 12px;

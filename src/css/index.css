@@ -142,34 +142,19 @@ body {
 @media screen and (max-width: 768px) {
   .header-img {
     max-width: 150px;
-    margin: 0;
+    margin: 0 0 0 15px;
   }
   .header__blocks {
     padding: 10px 5px;
     margin: 0;
+    justify-content: space-between;
   }
   .header-contacts {
-    justify-content: center;
-    margin: 0;
-  }
-  .header-contacts__phone {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 5px;
-    border: none;
-    font-size: 15px;
-  }
-  .header-contacts__phone:last-child {
-    margin: 0;
+    display: none;
   }
   .header-button {
-    padding: 7px;
-  }
-  .header img {
-    margin: 0;
-  }
-  .header span {
-    display: none;
+    margin-left: 20px;
+    padding: 8px 10px;
   }
 }
 
@@ -213,12 +198,13 @@ body {
   max-width: 524px;
 }
 
-.main-info__title span {
-  font-weight: 700;
+.main-info__title h2 {
+  font-weight: 600;
   font-size: 40px;
 }
 
 .info-card {
+  text-align: center;
   padding: 30px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -231,8 +217,8 @@ body {
   line-height: 30px;
 }
 
-.info-card-title span:last-child {
-  font-weight: 700;
+.info-card-title h2:last-child {
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -280,7 +266,7 @@ body {
     margin-bottom: 10px;
     line-height: normal;
   }
-  .main-info__title span {
+  .main-info__title h2 {
     font-size: 18px;
   }
   .info-card {
@@ -290,22 +276,22 @@ body {
     line-height: normal;
     margin: 0;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 14px;
   }
-  .info-card-title span {
+  .info-card-title h2 {
     display: none;
     font-size: 10px;
     font-weight: 300;
   }
-  .info-card-title span:first-child {
+  .info-card-title h2:first-child {
     font-weight: 500;
     line-height: normal;
     font-size: 15px;
-    display: inline !important;
+    display: block !important;
   }
   .info-card-form {
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   .info-card-form input {
     margin: 0 auto;
@@ -395,20 +381,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .features {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
   .features__header {
+    font-size: 20px;
     border-radius: 0px;
-    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 10px;
     padding: 5px;
-    font-size: 18px;
   }
   .features__header h2 {
     margin-bottom: 5px;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 25px;
   }
   .features-wrap {
     padding: 0 0px;
@@ -734,7 +717,6 @@ body {
     width: auto;
   }
   .slider-small__item {
-    vertical-align: middle;
     margin: 0;
   }
   .slider .slick-arrow {
@@ -742,18 +724,24 @@ body {
     margin: 0;
     border-radius: 5px;
   }
+  .slider .slick-slide img {
+    width: 100%;
+  }
   .slider-big {
     display: none !important;
   }
   .descr {
     line-height: normal;
     font-weight: 500;
+    margin: 0 auto;
     margin-top: 10px;
     width: auto;
+    max-width: 760px;
     min-height: auto;
     font-size: 13px;
   }
   .descr-header {
+    border-radius: 5px;
     text-align: center;
     padding: 16px 30px;
     font-size: 30px;
@@ -820,6 +808,10 @@ body {
     max-height: 100px;
     width: auto;
     margin-top: 10px;
+  }
+  .clients-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 

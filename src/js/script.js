@@ -12,9 +12,10 @@ $(document).ready(function () {
     asNavFor: ".slider-big",
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
+          // centerMode: true,
         },
       },
     ],
@@ -25,9 +26,10 @@ $(document).ready(function () {
     speed: 800,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
+          // centerMode: true,
         },
       },
     ],

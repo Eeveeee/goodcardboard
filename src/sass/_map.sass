@@ -13,8 +13,12 @@
     color: $text-color
     background: rgba(255,255 ,255 ,0.8 )
     .button
+      display: flex
+      vertical-align: middle
       padding: 10px 20px
       margin-bottom: 20px
+      img
+        margin-right: 5px
   &__block
     margin-bottom: 20px
     display: flex
@@ -55,8 +59,13 @@
       border-radius: 0
       padding: 5px
       .button
-        padding: 10px 15px
-        margin: 10px 0
+        display: inline-block
+        padding: 5px 50px
+        margin: 5px 0
+        img
+          margin: 0 auto
+        span
+          display: none
     &__block
       margin-bottom: 5px
       justify-content: center

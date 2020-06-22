@@ -44,8 +44,11 @@
         span
           display: none
       &__img
-        min-height: 109px
-        max-height: 109px
+        min-height: auto
+        min-height: 128px
+        img
+          max-width: 100% !important
+          overflow: auto
       &__buttons
         display: flex
         flex-direction: column-reverse
